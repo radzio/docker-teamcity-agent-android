@@ -12,6 +12,7 @@ RUN dpkg --add-architecture i386 \
    && wget -qO- http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz | tar xz -C /opt \
    && echo "y" | android update sdk -u -a -t 1 \
    && echo "y" | android update sdk -u -a -t 2 \
+   && echo "y" | android update sdk -u -a -t 4 \
    && echo "y" | android update sdk -u -a -t 6 \
    && echo "y" | android update sdk -u -a -t 25 \
    && echo "y" | android update sdk -u -a -t 26 \
